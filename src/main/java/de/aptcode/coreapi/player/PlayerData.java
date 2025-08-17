@@ -1,51 +1,67 @@
 package de.aptcode.coreapi.player;
 
 /*
-Data class for the player.
+
+    Data class for the player.
+
  */
 
-import com.google.gson.Gson;
+import de.aptcode.coreapi.data.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-public class PlayerData {
+@AllArgsConstructor
+@Setter
+@Getter
+public class PlayerData extends Data<PlayerData> {
 
-    //Minecraft
+    //Player data
     private String uniqueId;
     private String playerName;
-    private ArrayList<String> ips;
     private int level;
     private double xp;
     private double tokens;
-    private long playtime;
-    private long lastPlaytime;
     private boolean vanished;
-    private String inventory;
 
-    //Island
+
+    //Minecraft data
+    private String inventory;
+    private double health;
+    private double food;
+    private int experienceLevel;
+    private float experienceProgress;
+
+    //Island data
     private boolean hasIsland;
     private ArrayList<String> invited;
     private int boughtSlots;
     private long islandResetCooldown;
 
-    //Discord
+    //Discord data
     private boolean isVerified;
     private String discordVerifyPlayerNameUnique;
 
-    //Proxy
+    //Proxy data
     private int banPoints;
     private boolean banned;
     private int banId;
     private int reason;
-    private Long expires;
+    private long expires;
+    private long lastJoin;
+    private int join;
+    private String lastServer;
+    private String currentServer;
+    private HashMap<String, String> friends;
+    private long playtime;
+    private long lastPlaytime;
+    private ArrayList<String> ips;
 
-
-    public static String toJson(PlayerData playerData) {
-        return new Gson().toJson(playerData);
-    }
-
-    public static PlayerData fromJson(String jsonPlayerData) {
-        return new Gson().fromJson(jsonPlayerData, PlayerData.class);
-    }
+    //Clan data
+    private String clanName;
+    private String clanRank;
 
 }
