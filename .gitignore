@@ -2,3 +2,7 @@
 .idea
 build
 .DS_Store
+gradlew
+gradlew.bat
+settings.gradle.kts
+build.gradle.kts
