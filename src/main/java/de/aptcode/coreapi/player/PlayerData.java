@@ -1,26 +1,32 @@
 package de.aptcode.coreapi.player;
 
 /*
-Data class for the player.
+
+    Data class for the player.
+
  */
 
-import de.aptcode.coreapi.interfaces.Data;
+import de.aptcode.coreapi.data.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+@AllArgsConstructor
+@Setter
+@Getter
 public class PlayerData extends Data<PlayerData> {
 
     //Player data
     private String uniqueId;
     private String playerName;
-    private ArrayList<String> ips;
     private int level;
     private double xp;
     private double tokens;
-    private long playtime;
-    private long lastPlaytime;
     private boolean vanished;
+
 
     //Minecraft data
     private String inventory;
@@ -50,6 +56,9 @@ public class PlayerData extends Data<PlayerData> {
     private String lastServer;
     private String currentServer;
     private HashMap<String, String> friends;
+    private long playtime;
+    private long lastPlaytime;
+    private ArrayList<String> ips;
 
     //Clan data
     private String clanName;
