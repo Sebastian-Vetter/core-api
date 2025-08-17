@@ -1,4 +1,4 @@
-package de.aptcode.coreapi.interfaces;
+package de.aptcode.coreapi.repository;
 
 import java.util.Optional;
 
