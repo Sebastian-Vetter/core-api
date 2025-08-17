@@ -1,8 +1,9 @@
-package de.aptcode.coreapi.interfaces;
+package de.aptcode.coreapi.data;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
+import javax.annotation.Nullable;
 import java.lang.reflect.Type;
 
 /*
@@ -21,10 +22,12 @@ public abstract class Data<DataType> {
         this.type = new TypeToken<DataType>(getClass()){}.getType();
     }
 
+    @Nullable
     public DataType fromJson(String json) {
         return gson.fromJson(json, type);
     }
 
+    @Nullable
     public String toJson(DataType dataType) {
         return gson.toJson(dataType);
     }
