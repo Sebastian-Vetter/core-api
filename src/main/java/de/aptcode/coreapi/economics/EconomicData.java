@@ -10,6 +10,9 @@ import lombok.Setter;
 @Getter
 public class EconomicData extends Data<EconomicData> {
 
+    //todo: ShopNPCsTypes, ShopNPCs, Funds,
 
+    private MarketItem[] marketItems;
+    private double currentMoney;
 
 }
