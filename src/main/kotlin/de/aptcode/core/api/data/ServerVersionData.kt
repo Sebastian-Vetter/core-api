@@ -1,6 +1,6 @@
-package de.aptcode.core.api.worker
+package de.aptcode.core.api.data
 
-import de.aptcode.core.api.cloud.ServerTypes
+import de.aptcode.core.api.utils.ServerTypes
 
 data class ServerVersionData(
     val version: String,

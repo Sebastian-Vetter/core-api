@@ -1,7 +1,7 @@
-package de.aptcode.core.api.socket
+package de.aptcode.core.api.data
 
 import com.google.gson.JsonObject
-import de.aptcode.core.api.worker.Events
+import de.aptcode.core.api.events.Events
 
 data class SocketMessageData(
     val event: Events,

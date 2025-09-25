@@ -1,4 +1,6 @@
-package de.aptcode.core.api.worker
+package de.aptcode.core.api.services
+
+import de.aptcode.core.api.data.ServerVersionData
 
 interface WorkerService {
     // Class parameters

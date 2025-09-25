@@ -1,4 +1,4 @@
-package de.aptcode.core.api.repository
+package de.aptcode.core.api.services
 
 interface RepositoryService<Data, Key> {
 

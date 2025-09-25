@@ -1,8 +1,6 @@
-package de.aptcode.core.api.socket
+package de.aptcode.core.api.services
 
-import de.aptcode.core.api.utils.CallbackService
-
-interface SocketInterface<T> {
+interface SocketServerService<T> {
 
     fun start(callbackInterface: CallbackService<T>)
     fun stop(callbackInterface: CallbackService<T>)

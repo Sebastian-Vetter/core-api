@@ -1,4 +1,4 @@
-package de.aptcode.core.api.worker
+package de.aptcode.core.api.events
 
 enum class Events {
 

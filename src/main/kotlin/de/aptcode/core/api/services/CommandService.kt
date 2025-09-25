@@ -1,4 +1,4 @@
-package de.aptcode.core.api.commands
+package de.aptcode.core.api.services
 
 interface CommandService {
     val name: String;

@@ -1,4 +1,4 @@
-package de.aptcode.core.api.utils
+package de.aptcode.core.api.services
 
 interface CallbackService<T> {
 
