@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-publish:
+  build-and-upload-on-nexus:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
       - name: Build JAR
         run: ./gradlew build
 
-      - name: Publish to Nexus
+      - name: Upload to Nexus
         env:
           NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
