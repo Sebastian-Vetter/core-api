@@ -1,6 +1,6 @@
 package de.aptcode.core.api.commands
 
-interface CommandInterface {
+interface CommandService {
     val name: String;
     val descriptor: String;
     fun execute(args: List<String>);
