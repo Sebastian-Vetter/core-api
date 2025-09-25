@@ -2,9 +2,8 @@ package de.aptcode.core.api
 
 import com.google.gson.Gson
 
-class CoreAPI {
+class CoreAPI constructor(private val gson: Gson) {
 
-    val gson = Gson();
-    val prefix: String = "Cloud"
+
 
 }
