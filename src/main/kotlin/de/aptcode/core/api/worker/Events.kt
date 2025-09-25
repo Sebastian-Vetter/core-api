@@ -1,6 +1,6 @@
 package de.aptcode.core.api.worker
 
-enum class WorkerEvents {
+enum class Events {
 
     START_SERVER,
     STOP_SERVER,
@@ -8,6 +8,9 @@ enum class WorkerEvents {
     DELETE_SERVER,
     CREATE_SERVER_GROUP,
     DELETE_SERVER_GROUP,
-    HEARTBEAT
+    HEARTBEAT,
+    WORKER_AUTHENTICATION,
+    WORKER_CONNECTED,
+    WORKER_DISCONNECTED,
 
 }
